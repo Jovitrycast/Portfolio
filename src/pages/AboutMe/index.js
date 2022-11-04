@@ -3,11 +3,11 @@ import { Container } from 'reactstrap'
 import './about_me.scss'
 function index() {
     return (
-        <div className='aboutMeWrapper p-2'>
-            <Container>
+        <div className='aboutMeWrapper text-light'>
+            <Container className='h-100'>
                 <h1 className='text-center fw-bold mb-3'>ABOUT ME</h1>
-                <Container className='row d-lg-flex align-items-center justify-content-around'>
-                    <div className='col-lg-4 col-sm-9 align-self-center'>
+                <Container className='row d-lg-flex align-items-center justify-content-around mx-auto'>
+                    <div className='col-lg-4 col-sm-8 align-self-center'>
                         <img className='avatar img-fluid' src={require('../../assets/images/avatar.jpg')} alt="Profile-avatar"/>
                     </div>
                     <div className="col-lg-6 details mt-4">
