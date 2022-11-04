@@ -16,7 +16,7 @@
     "reactstrap": "^9.1.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://jovitrycast.github.io/portfolio",
+  "homepage": "http://Jovitrycast.github.io/Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
