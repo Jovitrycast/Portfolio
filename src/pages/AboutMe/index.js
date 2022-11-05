@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap'
-import './about_me.scss'
+import './index.scss'
 function index() {
     return (
         <div className='aboutMeWrapper p-2 text-light'>
