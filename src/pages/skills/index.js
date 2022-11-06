@@ -1,63 +1,59 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './index.scss';
-import { Container,Nav, NavItem, NavLink,TabContent,TabPane,Row,Col } from 'reactstrap';
 
-function Index(props) {
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import { Container, Row } from 'react-bootstrap'
+
+function Index() {
     
-    // State for current active Tab
-    const [currentActiveTab, setCurrentActiveTab] = useState('1');
-    // Toggle active state for Tab
-    const toggle = tab => {
-        if (currentActiveTab !== tab) setCurrentActiveTab(tab);
-    }
     return (
         <div className='skillsWrapper p-2 text-light'>
-            <Container>
-                <h1 className='text-center fw-bold'>Skills</h1>
-                <div className="text-center">
-                    <div className="skills w-50">
-                    <Nav tabs>
-                        <NavItem>
-                            <NavLink
-                            className="fs-5 fw-bold bg-dark text-warning border-warning"
-                            onClick={() => toggle('1')}
-                            >
-                            FRONTEND
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                            className="fs-5 fw-bold text-warning"
-                            onClick={() => toggle('2')}
-                            >
-                            BACKEND
-                            </NavLink>
-                        </NavItem>
-                        </Nav>
-                        <TabContent activeTab={currentActiveTab}>
-                            <TabPane tabId="1">
-                                <Row>
-                                <Col sm="12 d-flex justify-content-between p-2 flex-wrap">
-                                    <img src={require('../../assets/images/skills-icon/html-5.png')} alt="HTML" />
-                                    <img src={require('../../assets/images/skills-icon/css-3.png')} alt="CSS" />
-                                    <img src={require('../../assets/images/skills-icon/JavaScript.png')} alt="JavaScript" />
-                                    <img src={require('../../assets/images/skills-icon/typescript.png')} alt="typescript" />
-                                    <img src={require('../../assets/images/skills-icon/react.png')} alt="react" />
-                                    <img src={require('../../assets/images/skills-icon/bootstrap.png')} alt="bootstrap" />
-                                </Col>
-                                </Row>
-                            </TabPane>
-                            <TabPane tabId="2">
-                                <Row>
-                                <Col sm="12 d-flex justify-content-between p-2 flex-wrap">
-                                    <img src={require('../../assets/images/skills-icon/html-5.png')} alt="HTML" />
-                                </Col>
-                                </Row>
-                            </TabPane>  
-                        </TabContent>
-                    </div>
-                </div>
-            </Container>
+			<h1 className='text-center fw-bold'>Skills</h1>
+			<Row className='p-3'>
+				<Container className='order-md-2 col-md-5 mb-5'>
+					<Tabs
+						justify
+						defaultActiveKey="frontend"
+						>
+						<Tab eventKey="frontend" title="FRONTEND" className='border border-light'>
+							<ul className='skills fs-2'>
+								<li>HTML & CSS</li>
+								<li>Javascript</li>
+								<li>TypeScript</li>
+								<li>React JS</li>
+								<li>Bootstrap</li>
+								<li>jQuery</li>
+							</ul>
+						</Tab>
+						<Tab eventKey="backend" title="BACKEND" className='border border-light'>
+							<ul className='skills fs-2'>
+								<li>PHP</li>
+								<li>CodeIgniter</li>
+								<li>Express JS</li>
+								<li>Node JS</li>
+								<li>MySQL</li>
+							</ul>
+						</Tab>
+					</Tabs>
+				</Container>
+				<Container className='order-md-1 col-md-6'>
+					 <div>
+					 	<h3 className='fs-1'>Education</h3>
+						<a className='text-decoration-none fs-4 text-warning' href="https://main.psu.edu.ph/">Pangasinan State University</a>
+						<span className='d-block'>Lingayen, Pangasinan</span>
+						<span className='d-block'>Class 2018</span>
+						<span className='d-block mt-4'>Degree: Bachelor of Science in I.T.</span>
+					 </div>
+					 <div className='order-md-1 mt-5'>
+						<h3 className='fs-1'>Training</h3>
+						<a className='text-decoration-none fs-4 text-warning' href="https://village88.com/">Village88 Inc.</a>
+						<span className='d-block'>Full Stack Web Development Training</span>
+						<span className='d-block mt-4'>Batch - 3 (2022)</span>
+					 </div>
+				</Container>
+			</Row>
+			
         </div>
     );
 }
