@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container } from 'react-bootstrap';
 import './index.scss';
 
 const index = () => {

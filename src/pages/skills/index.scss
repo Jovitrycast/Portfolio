@@ -1,4 +1,11 @@
 .skillsWrapper{
     background-color: #333445;
     min-height:100vh ;
+    .skills{
+        list-style-type: none;
+
+        li{
+            margin-bottom: 15px;
+        }
+    }
 }
