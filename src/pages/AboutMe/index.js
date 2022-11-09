@@ -14,7 +14,8 @@ function index() {
                         <span className='fs-1 fw-bold d-block text-primary'>WEB DEVELOPER</span>
                         <span className='fs-2 fw-bold text-primary fe mb-2'>Frontend Developer</span>
                         <p className='lead'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quibusdam obcaecati mollitia facilis nemo dignissimos doloribus reiciendis illo quisquam odio!
+                            I am an aspiring Web developer, mainly on Frontend, I rencently finished full stack web development
+                            training on Village88 Inc. it helps me a lot to enchance my coding skills.
                         </p>
                     </div>
                 </Container>
@@ -22,17 +23,21 @@ function index() {
                     <div className="col-md mb-5">
                         <img className='w-50' src={require('../../assets/images/icons/responsive-page.png')} alt="" />
                         <span className='fs-2 fw-bold d-block'>Responsive</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, itaque totam. Blanditiis laudantium ipsum animi.</p>
+                        <p>
+                            I can develop responsive website that can work on any device regarding to its size.
+                        </p>
                     </div>
                     <div className="col-md mb-5">
                         <img className='w-50' src={require('../../assets/images/icons/dynamic.png')} alt="" />
                         <span className='fs-2 fw-bold d-block'>Dynamic</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellat cupiditate, ab esse minima fuga!</p>
+                        <p>
+                            I can develop interactive website that can be fully controlled by it's user.
+                        </p>
                     </div>
                     <div className="col-md mb-5">
                         <img className='w-50' src={require('../../assets/images/icons/clean-code.png')} alt="" />
                         <span className='fs-2 fw-bold d-block'>Clean</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque libero consectetur magni nobis minus sed.</p>
+                        <p>I can write a code that can be easily understood by other developers/programmers as well.</p>
                     </div>
                 </Container>
             </Container>
