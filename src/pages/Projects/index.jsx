@@ -4,25 +4,29 @@ import './index.scss'
 
 // ant design imports 
 import {GithubOutlined} from '@ant-design/icons'
-import { Button, Card } from 'antd';
+import { Button, Card, Row, Col} from 'antd';
 
-const { Meta } = Card;
 
 function index() {
   return (
     <>
         <section className="projectsWrapper text-light p-2">
-            <h1 className="text-center">Projects</h1>
-
-            {projectCollection.map((project, key) => (
-                <div className="row" key={key}>
+            <h1 className="text-center">Works</h1>
+            <Row className=''>
+                {projectCollection.map((project, key) => (
+                <Col
+                    sm={22}
+                    md={11}
+                    lg={7}
+                    className="mx-auto mb-3"
+                    >
                     <Card
+                        key={key}
                         hoverable
-                        size='large'
                         bodyStyle={{
                             padding: '10px'
                         }}
-                        className='w-25 text-center col-md'
+                        className='text-center'
                         cover={<img alt="project image" src={project.image}/>}
                     >
                         <div className="tech d-flex gap-2 justify-content-center ">
@@ -38,8 +42,9 @@ function index() {
                             </a>
                         </div>
                     </Card>
-                </div>
-            ))}
+                    </Col>
+                ))}
+            </Row>
         </section>
     </>
   )
