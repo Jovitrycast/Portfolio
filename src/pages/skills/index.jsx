@@ -1,42 +1,35 @@
 import React from 'react';
 import './index.scss';
 
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
 import { Container, Row } from 'react-bootstrap'
 import {FaGraduationCap, FaLaptopCode} from 'react-icons/fa'
 
+import {skillsFrontEnd, skillsBackEnd} from '../../data/skills';
 function Index() {
     
     return (
         <div className='skillsWrapper p-2 text-light'>
 			<h1 className='text-center fw-bold mt-2'>Skills</h1>
 			<Row className='p-3'>
-				<Container className='order-md-2 col-md-5 mb-6'>
-					<Tabs
-						justify
-						defaultActiveKey="frontend"
-						>
-						<Tab eventKey="frontend" title="FRONTEND" className='border border-warning'>
-							<ul className='skills fs-4 p-0 mb-0'>
-								<li className='bg-warning p-2 text-dark'>HTML & CSS</li>
-								<li className=' p-2 text-light'>Javascript</li>
-								<li className='bg-warning p-2 text-dark'>TypeScript</li>
-								<li className=' p-2 text-light'>React JS</li>
-								<li className='bg-warning p-2 text-dark'>Bootstrap</li>
-								<li className='p-2 text-light'>jQuery</li>
-							</ul>
-						</Tab>
-						<Tab eventKey="backend" title="BACKEND" className='border border-warning'>
-							<ul className='skills fs-4 p-0 mb-0'>
-								<li className='bg-warning p-2 text-dark'>PHP</li>
-								<li className=' p-2 text-light'>CodeIgniter</li>
-								<li className='bg-warning p-2 text-dark'>Express JS</li>
-								<li className=' p-2 text-light'>Node JS</li>
-								<li className='bg-warning p-2 text-dark'>MySQL</li>
-							</ul>
-						</Tab>
-					</Tabs>
+				<Container className='order-md-2 col-md-5 mb-6 text-center'>
+					<span className='fw-bold fs-4'>FRONTEND</span>
+					<div className="d-flex flex-wrap gap-3 my-3">
+						{skillsFrontEnd.map((skill,key) => (
+							<div key={key} className='d-flex flex-column align-items-center gap-1'>
+								<img src={skill.image} alt="skill icon"/>
+								<span>{skill.name}</span>
+							</div>
+						))}
+					</div>
+					<span className='fw-bold fs-4'>BACKEND</span>
+					<div className="d-flex flex-wrap gap-3 mx-y">
+						{skillsBackEnd.map((skill,key) => (
+							<div key={key} className='d-flex flex-column align-items-center gap-1'>
+								<img src={skill.image} alt="skill icon"/>
+								<span>{skill.name}</span>
+							</div>
+						))}
+					</div>
 				</Container>
 				<Container className='order-md-1 p-4 col-md-6'>
 					 <div>
