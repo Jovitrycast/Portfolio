@@ -22,7 +22,7 @@ function Index() {
 						))}
 					</div>
 					<span className='fw-bold fs-4'>BACKEND</span>
-					<div className="d-flex flex-wrap gap-3 mx-y">
+					<div className="d-flex flex-wrap gap-3 my-3">
 						{skillsBackEnd.map((skill,key) => (
 							<div key={key} className='d-flex flex-column align-items-center gap-1'>
 								<img src={skill.image} alt="skill icon"/>
