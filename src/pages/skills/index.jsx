@@ -13,7 +13,7 @@ function Index() {
     return (
         <div className='skillsWrapper p-2 text-light'>
 			<Container>
-				<h1 className='text-center fw-bold mt-2'>Skills</h1>
+				<h1 className='text-center fw-bold mt-2'>SKILLS</h1>
 				<Row className='p-3 justify-content-between'>
 					<section className='order-md-2 col-md-6 mb-6 text-center'>
 						<div>
@@ -39,7 +39,7 @@ function Index() {
 								</Row>
 							</div>
 						</div>
-						<div>
+						<div className='mt-5'>
 							<span className='fw-bold fs-4'>BACKEND</span>
 							<div className="d-flex flex-wrap gap-3 my-3">
 								<Row className='mx-auto'>
