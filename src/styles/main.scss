@@ -3,7 +3,10 @@
 
 html,body {
     scroll-behavior: smooth;
-    background: #f6f6f6 !important;
     font-family: $font-primary !important;
     height: 100vh;
+}
+.mainBG{
+    background: rgb(0,12,42);
+    background: linear-gradient(0deg, rgba(0,12,42,1) 0%, rgba(3,40,82,1) 63%, rgba(0,79,94,1) 100%);
 }
