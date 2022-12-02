@@ -12,10 +12,9 @@ function index() {
                     </div>
                     <div className="col-md details mt-4">
                         <span className='fs-1 fw-bold d-block text-primary'>WEB DEVELOPER</span>
-                        <span className='fs-2 fw-bold text-primary fe mb-2'>Frontend Developer</span>
                         <p className='lead'>
-                            I am an aspiring Web developer, mainly on Frontend, I rencently finished full stack web development
-                            training on Village88 Inc. it helps me a lot to enchance my coding skills.
+                            I'm an aspiring Web developer, mainly on Frontend, I rencently finished full stack web development
+                            training on Village88 Inc. It helps me a lot to enchance my coding skills.
                         </p>
                     </div>
                 </Container>

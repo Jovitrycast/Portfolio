@@ -30,7 +30,7 @@ function Index() {
 										xxl={4}
 										className="mx-auto mb-3"
 										>
-											<div key={key} className='d-flex flex-column align-items-center gap-1 mx-2'>
+											<div key={key} id='skill-icon' className='d-flex flex-column align-items-center gap-1 mx-2'>
 												<img src={skill.image} alt="skill icon"/>
 												<span>{skill.name}</span>
 											</div>
@@ -53,7 +53,7 @@ function Index() {
 										xxl={4}
 										className="mx-auto mb-3"
 										>
-											<div key={key} className='d-flex flex-column align-items-center gap-1 mx-2'>
+											<div key={key} id='skill-icon' className='d-flex flex-column align-items-center gap-1 mx-2'>
 												<img src={skill.image} alt="skill icon"/>
 												<span>{skill.name}</span>
 											</div>

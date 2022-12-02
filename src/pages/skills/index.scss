@@ -3,4 +3,10 @@
         list-style-type: none;
 
     }
+    #skill-icon{
+        transition: margin 0.2s ease-in-out;
+    }
+    #skill-icon:hover{
+        margin-top: -1rem;
+    }
 }
