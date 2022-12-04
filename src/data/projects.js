@@ -21,13 +21,6 @@ const projectCollection = [
         link: 'https://bidyo-tube.vercel.app/',
         code: 'https://github.com/Jovitrycast/BidyoTube',
         image: require("../assets/images/projects/BidyoTube.png")
-    },
-    {
-        projectName: 'Colorful Notes',
-        tech: ['React','Redux','Ant Design'],
-        link: 'https://colorful-notes.vercel.app/',
-        code: 'https://github.com/Jovitrycast/colorful-notes',
-        image: require("../assets/images/projects/Colorful-notes.png")
     }
 ]
 
