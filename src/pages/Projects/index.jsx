@@ -38,11 +38,13 @@ function index() {
                                 ))}
                             </div>
                             <div className='d-flex gap-2 mt-3 justify-content-center align-items-center'>
-                                <a href={project.code} target="_blank" rel="noreferrer">
-                                    <Button type='primary' size='' className='bg-dark text-light fw-bold border-0 d-flex justify-content-around align-items-center'>
-                                        <GithubOutlined className='text-light'/> View Code
+                                    <Button 
+                                        type='primary' 
+                                        className='fw-bold border-0 d-flex justify-content-around align-items-center'
+                                        disabled
+                                        >
+                                        <GithubOutlined/> View Code
                                     </Button>
-                                    </a>
                                 <a href={project.link} target="_blank" rel="noreferrer">
                                     <Button type='primary' className='fw-bold border-0 d-flex gap-1 align-items-center'>
                                         <BiLinkExternal/> Visit
