@@ -14,7 +14,7 @@ function index() {
     <div className='projectsWrapper'>
         <Container>
             <section className="text-light p-2 mt-5">
-                <h1 className="text-center">Works</h1>
+                <h1 className="text-center fw-bold mb-4">Works</h1>
                 <Row className=''>
                     {projectCollection.map((project, key) => (
                     <Col

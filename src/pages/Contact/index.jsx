@@ -65,7 +65,7 @@ const Contact = () => {
 					sm={22}
 					md={20}
 					lg={12}
-					className="mx-auto"
+					className="mx-auto mt-5"
 				>
 					<Form
 						form={form}

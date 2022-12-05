@@ -17,8 +17,8 @@ function Index() {
 				<Row className='p-3 justify-content-between'>
 					<section className='order-md-2 col-md-6 mb-6 text-center'>
 						<div>
-							<span className='fw-bold fs-4'>FRONTEND</span>
-							<div className="d-flex flex-wrap gap-3 my-3">
+							<h3 className='fs-2'>FRONTEND</h3>
+							<div className="d-flex flex-wrap gap-3 my-4">
 								<Row className='mx-auto'>
 									{skillsFrontEnd.map((skill,key) => (
 										<Col 
@@ -39,9 +39,9 @@ function Index() {
 								</Row>
 							</div>
 						</div>
-						<div className='mt-5'>
-							<span className='fw-bold fs-4'>BACKEND</span>
-							<div className="d-flex flex-wrap gap-3 my-3">
+						<div className='m-3'>
+							<h3 className='fs-2'>BACKEND</h3>
+							<div className="d-flex flex-wrap gap-3 my-4">
 								<Row className='mx-auto'>
 									{skillsBackEnd.map((skill,key) => (
 										<Col 
