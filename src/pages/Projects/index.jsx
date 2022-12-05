@@ -2,18 +2,18 @@ import projectCollection  from '../../data/projects';
 import './index.scss'
 
 import { BiLinkExternal } from 'react-icons/bi'
+import { Container} from 'react-bootstrap'
 
 // ant design and bootstrap imports
 import {GithubOutlined} from '@ant-design/icons'
 import { Button, Card, Row, Col} from 'antd';
-import { Container } from 'react-bootstrap';
 
 
 function index() {
   return (
     <div className='projectsWrapper'>
         <Container>
-            <section className="text-light p-2">
+            <section className="text-light p-2 mt-5">
                 <h1 className="text-center">Works</h1>
                 <Row className=''>
                     {projectCollection.map((project, key) => (

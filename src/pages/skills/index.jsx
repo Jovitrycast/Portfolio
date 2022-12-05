@@ -11,7 +11,7 @@ import {skillsFrontEnd, skillsBackEnd} from '../../data/skills';
 function Index() {
     
     return (
-        <div className='skillsWrapper p-2 text-light'>
+        <div className='skillsWrapper p-2 text-light mt-5'>
 			<Container>
 				<h1 className='text-center fw-bold mt-2'>SKILLS</h1>
 				<Row className='p-3 justify-content-between'>
