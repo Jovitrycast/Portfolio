@@ -10,6 +10,8 @@ import {FaEraser} from 'react-icons/fa'
 
 // Ant Design imports
 import { Button, Col, Form, Input, Row, message, Popconfirm} from 'antd';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
@@ -28,7 +30,14 @@ const validateMessages = {
 const Contact = () => {
 	const [form] = Form.useForm();
 	const [messageApi, contextHolder] = message.useMessage();
+	const [checkMessage,setCheckMessage] = useState('');
+	const [isDisabled,setIsDisabled] = useState(true);
 
+	useEffect(() => {
+	  checkMessage.length > 0 ? setIsDisabled(false) : setIsDisabled(true)
+	
+	}, [checkMessage]);
+	
 	const confirm = () => {
 		message.info('Form has been Cleared');
 		form.resetFields();
@@ -74,7 +83,7 @@ const Contact = () => {
 						validateMessages={validateMessages}
 						>
 						<Form.Item
-							name='user_name'
+							name='name'
 							rules={[
 							{
 								required: true,
@@ -84,10 +93,11 @@ const Contact = () => {
 							<Input placeholder='Name'/>
 						</Form.Item>
 						<Form.Item
-							name='user_email'
+							name='email'
 							rules={[
 							{
 								type: 'email',
+								required: true
 							},
 							]}
 						>
@@ -96,7 +106,7 @@ const Contact = () => {
 						<Form.Item 
 							name='message'
 						>
-							<Input.TextArea placeholder='Message' name="message"/>
+							<Input.TextArea placeholder='Message' name="message" onChange={(e) => setCheckMessage(e.target.value)}/>
 						</Form.Item>
 						<Form.Item
 						>
@@ -113,10 +123,11 @@ const Contact = () => {
 							</Popconfirm>	
 								<Button 
 									size='large' 
-									ghost
 									type="primary" 
 									htmlType="submit" 
 									icon={<IoIosPaperPlane className='me-2'/>}
+									disabled={isDisabled}
+									className={isDisabled? "text-secondary bg-light" : "" }
 								>
 								Submit
 								</Button>
