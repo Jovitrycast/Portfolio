@@ -13,8 +13,10 @@ function index() {
                     <div className="col-md details mt-4">
                         <span className='fs-1 fw-bold d-block text-primary'>WEB DEVELOPER</span>
                         <p className='lead'>
-                            I'm an aspiring Web developer, mainly on Frontend, I rencently finished full stack web development
-                            training on Village88 Inc. It helps me a lot to enchance my coding skills.
+                        I'm a frontend-focused aspiring web developer, who recently completed the full stack web development
+                        training provided by the Village88 Inc. The bootcamp has given me new insights and knowledge about 
+                        the field of web developement which has aided me greatly in improving my coding skills to that of 
+                        becoming a developer ready.
                         </p>
                     </div>
                 </Container>

@@ -68,7 +68,7 @@ function Index() {
 							<h3 className='fs-2 align-items-center'><FaGraduationCap/> Education</h3>
 							<a className='text-decoration-none fs-4 text-warning' href="https://main.psu.edu.ph/">Pangasinan State University</a>
 							<span className='d-block'>Lingayen, Pangasinan</span>
-							<span className='d-block'>Class 2018</span>
+							<span className='d-block'>Class 2018 - 2022</span>
 							<span className='d-block mt-4'>Degree: Bachelor of Science in I.T.</span>
 						</div>
 						<div className='order-md-1 mt-5'>
